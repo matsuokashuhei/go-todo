@@ -1,6 +1,8 @@
 {
     "build": {
-        "dockerfile": "Dockerfile"
+        "context": "..",
+        "dockerfile": "Dockerfile",
+        "target": "dev"
     },
     "extensions": [
         "golang.go"

@@ -17,5 +17,5 @@ func main() {
 		return c.SendString("App running")
 	})
 
-	log.Fatal(app.Listen(":5000"))
+	log.Fatal(app.Listen(":3000"))
 }
