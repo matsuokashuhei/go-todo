@@ -26,7 +26,7 @@ func (repository *TodoRepository) Find(id int) (Todo, error) {
 }
 
 func (repository *TodoRepository) Create(todo Todo) (Todo, error) {
-	err := repository.database.Save(todo).Error
+	err := repository.database.Create(&todo).Error
 	if err != nil {
 		return todo, err
 	}

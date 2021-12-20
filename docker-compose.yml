@@ -6,14 +6,14 @@ services:
       context: .
       dockerfile: '.devcontainer/Dockerfile'
       target: dev
-    # command: sleep infinity
+    command: sleep infinity
     env_file: .env
     volumes:
       - .:/app
     ports:
       - "3000:3000"
       - "2345:2345"
-  db:
+  postgres:
     image: postgres
     env_file: .env
     volumes:
